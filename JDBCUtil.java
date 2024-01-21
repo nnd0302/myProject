@@ -9,7 +9,7 @@ public class JDBCUtil {
         Connection c = null;
         try {
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3307/duancuoiki", "root", "");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3307/duancuoiki", "username", "password");
         } catch (SQLException e) {
             e.printStackTrace();
         }
